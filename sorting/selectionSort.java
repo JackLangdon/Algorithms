@@ -2,8 +2,11 @@ import java.util.Scanner;
 
 public class selectionSort {
 
-	int[] array;
-	int swapCount;
+	private int[] array;
+	private int size;
+	private int min;
+	private int max;
+	private int swapCount;
 
 	public void buildArray(int size, int min, int max) {
 		this.array = new int[size];
@@ -64,17 +67,17 @@ public class selectionSort {
 		Scanner sc = new Scanner(System.in);
 
 		System.out.println("Enter array size:");
-		int size = sc.nextInt();
+		this.size = sc.nextInt();
 
 		System.out.println("Enter min value:");
-		int min = sc.nextInt();
+		this.min = sc.nextInt();
 
 		System.out.println("Enter max value:");
-		int max = sc.nextInt();
+		this.max = sc.nextInt();
 
 		sc.close();
 
-		buildArray(size, min, max);
+		buildArray(this.size, this.min, this.max);
 		System.out.println("Initial array:");
 		System.out.println();
 		printArray();
@@ -94,6 +97,7 @@ public class selectionSort {
 		selectionSort selectionSort = new selectionSort();
 	}
 }
+
 
 /*
 
