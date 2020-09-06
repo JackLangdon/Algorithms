@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
 public class insertionSort {
-	int[] array;
-	int size;
-	int min;
-	int max;
-	int swapCount;
+	private int[] array;
+	private int size;
+	private int min;
+	private int max;
+	private int swapCount;
 
 	public void buildArray(int size, int min, int max) {
 		this.array = new int[size];
